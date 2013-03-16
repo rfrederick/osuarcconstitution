@@ -36,4 +36,8 @@ When creating the labels, the convention is:
 
 ### Document Interlinking and Referencing
 
-(WIP)
+(to-do)
+
+### Compilation
+
+The document is set up to be compiled with the latest version of TeX Live 2012 using the included `arara` utility. Simply run the included `arara` binary with `constitution.tex` as the only argument, and the entire document will compile.
