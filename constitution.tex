@@ -26,27 +26,39 @@
 }
 
 \newcommand{\myarticle}[2][art:\arabic{section}]{%
-\phantomsection
-\refstepcounter{section}%
-\label{art:#1}%
-\addcontentsline{toc}{section}{Article \Roman{section}. #2}%
-\section*{Article \Roman{section}. #2}%
+  \phantomsection
+  \refstepcounter{section}%
+  \label{art:#1}%
+  \addcontentsline{toc}{section}{%
+    \sectionautorefname{} \Roman{section}. #2%
+  }%
+  \section*{%
+    \sectionautorefname{} \Roman{section}. #2
+  }%
 }
 
 \newcommand{\mysection}[2][art:\arabic{section}:\Alph{subsection}]{%
-\phantomsection
-\refstepcounter{subsection}%
-\label{sec:#1}%
-\addcontentsline{toc}{subsection}{\textit{Section \Alph{subsection}: #2}}%
-\subsection*{\textit{Section \Alph{subsection}: #2}}%
+  \phantomsection
+  \refstepcounter{subsection}%
+  \label{sec:#1}%
+  \addcontentsline{toc}{subsection}{%
+    \textit{\subsectionautorefname{} \Alph{subsection}: #2}%
+  }%
+  \subsection*{%
+    \textit{\subsectionautorefname{} \Alph{subsection}: #2}%
+  }%
 }
 
 \newcommand{\mysubsection}[2][art:\arabic{section}:\Alph{subsection}:\arabic{subsubsection}]{%
-\phantomsection
-\refstepcounter{subsubsection}%
-\label{sub:#1}%
-\addcontentsline{toc}{subsubsection}{Subsection \arabic{subsubsection}: #2}%
-\subsubsection*{Subsection \arabic{subsubsection}: #2}%
+  \phantomsection
+  \refstepcounter{subsubsection}%
+  \label{sub:#1}%
+  \addcontentsline{toc}{subsubsection}{%
+    \subsubsectionautorefname{} \arabic{subsubsection}: #2%
+  }%
+  \subsubsection*{%
+    \subsubsectionautorefname{} \arabic{subsubsection}: #2%
+  }%
 }
 
 \renewcommand\thesection{\Roman{section}}
