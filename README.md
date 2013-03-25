@@ -15,9 +15,9 @@ As a general rule of thumb when editing the LaTeX, just try to follow the format
 
 I have defined 3 commands to ease creation of sections and the ability to work with them that should be used throughout the document:
 ```latex
-\myarticle[]{} %for the creation of articles
-\mysection[]{} %for the creation of sections
-\mysubsection[]{} %for the creation of subsections
+\myarticle[]{}    % for the creation of articles
+\mysection[]{}    % for the creation of sections
+\mysubsection[]{} % for the creation of subsections
 ```
 
 #### Primary Argument
@@ -42,9 +42,17 @@ Any time you want to refer to another article in the constitution, you should al
 
 This is all done using 3 basic commands (these can be used for articles, sections, and subsections):
 ```latex
-\hyperref[]{} %This allows us to link to an article and control the text that is linked to
-\autoref{} %This creates the text that refers to an article based on its label, and will optionally link to the article as well
-\ref{} %This does the same as \autoref, but only creates the alphanumerical representation (eg. referencing the label for Article III would output III here)
+\hyperref[]{} % This allows us to link to an article
+              % and control the text that is linked to
+
+\autoref{}    % This creates the text that refers to an
+              % article based on its label, and will 
+              % optionally link to the article as well
+
+\ref{}        % This does the same as \autoref, but only
+              % creates the alphanumerical representation
+              % (eg. referencing the label for Article III
+              % would output III here)
 ```
 #### Labels
 
