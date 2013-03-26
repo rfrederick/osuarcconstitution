@@ -78,4 +78,6 @@ You will probably *not* need to use this, but it can be useful if you want to re
 
 ### Compilation
 
-The document is set up to be compiled with the latest version of TeX Live 2012 using the included `arara` utility. Simply run the included `arara` binary with `constitution.tex` as the only argument, and the entire document will compile. Alternatively, the document can simply be compiled with several passes of `pdflatex`.
+The document is set up to be compiled with the latest version of vanilla TeX Live 2012 using the included `arara` utility. Simply run the included `arara` binary with `constitution.tex` as the only argument, and the entire document will compile.
+
+Alternatively, and particularly on older versions of TeX Live without `arara`, the document can simply be compiled with several passes of `pdflatex`.
